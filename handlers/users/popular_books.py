@@ -18,6 +18,6 @@ async def solve_tasks(message: Message):
               f'Количество страниц: {books[0]["pages"]}\n' \
               f'Описание: {books[0]["about"]}\n' \
               f'<a href = {books[0]["name"]}>Ссылка для прочтения</a>'
-
+#Вывод
 
     await message.answer_photo(books[0]["img"],  caption=caption, parse_mode="html")
