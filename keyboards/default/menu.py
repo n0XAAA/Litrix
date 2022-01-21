@@ -1,5 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-main_captions = ["Новинки", "По жанрам", "Популярные"]
+main_captions = ["Русская классика", "По жанрам", "Популярные", "Жанр"]
 menu = ReplyKeyboardMarkup(
     keyboard=[
         [

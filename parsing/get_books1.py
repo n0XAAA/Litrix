@@ -8,7 +8,7 @@ import asyncio
 
 async def get_books(query):
     # get dict from json
-    with open("data/categories.json", "r", encoding="utf-8") as categories:
+    with open("data/categories1.json", "r", encoding="utf-8") as categories:
         url_dict = json.load(categories)
         print(url_dict)
     page = str(random.randint(1, 51))
@@ -52,8 +52,3 @@ async def get_books(query):
         book_list.append(book)
     return book_list
 
-
-
-#if __name__ == '__main__':
-#    from pprint import pprint
-#    pprint(asyncio.run(get_books("Популярные")))
